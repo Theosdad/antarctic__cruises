@@ -1,0 +1,29 @@
+.footer {
+    width: 100%;
+    background-color: $tangaroa;
+    min-height: 138px;
+}
+
+.footer__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 50px 45px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    margin-right: 40px;
+}
+
+.footer__menu {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+}
+
+.footer__social {
+    margin: 0;
+    padding: 0;
+}

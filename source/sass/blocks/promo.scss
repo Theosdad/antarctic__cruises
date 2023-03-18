@@ -1,0 +1,27 @@
+.promo__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 120px 45px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.promo__description {
+    h2 {
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        padding-top: 66px;
+        
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        max-width: 512px;
+    }
+}

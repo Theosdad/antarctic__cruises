@@ -1,0 +1,44 @@
+.contacts__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 120px 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7%
+}
+
+.contacts__map {
+    flex-shrink: 0;
+}
+
+.contacts__description {
+
+    h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: $tangaroa;
+
+    svg {
+        margin-right: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+}

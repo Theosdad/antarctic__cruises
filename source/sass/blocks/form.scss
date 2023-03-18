@@ -1,0 +1,148 @@
+.form {
+    width: 100%;
+}
+
+.form__container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 520px 520px auto;
+}
+
+.form__image {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    img {
+        object-fit: cover;
+        object-position: 50% 100%;
+        width: 100%;
+        max-height: 555px;
+    }
+}
+
+.form__heading {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    padding-top: 228px;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 30px;
+
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    p {
+        margin: 0;
+        max-width: 352px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+.form__content {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    padding: 50px;
+
+    form {
+        height: 455px;
+        max-width: 403px;
+        background-color: $tangaroa;
+        padding: 50px;
+    }
+}
+
+.form__heading-wrapper {
+    h3 {
+        margin: 0;
+        margin-bottom: 35px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: $alice-blue;
+    }
+}
+
+.form__input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form__input {
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    color: $tangaroa;
+
+    & input:not([type="checkbox"]) {
+        width: 100%;
+        padding: 11px 16px;
+        color: $tangaroa;
+    }
+
+    &::placeholder {
+        color: rgba($tangaroa, 0.7)
+    }
+
+    &--username {
+        margin-bottom: 20px;
+    }
+
+    &--userphone {
+        margin-bottom: 20px;
+    }
+
+    &--usermail {
+        margin-bottom: 20px;
+    }
+
+    &--agreement {
+        font-size: 10px;
+        line-height: 13px;
+        color: $alice-blue;
+        margin-bottom: 35px;
+
+        label {
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            appearance: none;
+            position: relative;
+            width: 18px;
+            height: 18px;
+            background-color: $alice-blue;
+            margin-right: 5px;
+
+            &::after {
+                position: absolute;
+                top: 10%;
+                left: 35%;
+                width: 6px;
+                height: 10px;
+                border: 1px solid $sapphire;
+                border-top: none;
+                border-left: none;
+                transform: rotate(45deg);
+            }
+        }
+
+        input:checked {
+
+            &::after {
+                content: "";
+            }
+        }
+    }
+
+    &--button {
+        font-weight: 600;
+        padding: 9px 0;
+    }
+}
