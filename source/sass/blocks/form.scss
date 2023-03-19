@@ -6,7 +6,21 @@
     max-width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 520px 520px auto;
+    grid-template-columns: auto 1fr auto;
+}
+
+.form__wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9%;
+
+    @media (max-width: $tablet-width) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__image {
@@ -17,15 +31,35 @@
         object-fit: cover;
         object-position: 50% 100%;
         width: 100%;
+        height: 100%;
         max-height: 555px;
+
+        @media (max-width: $tablet-width) {
+            max-height: 805px;
+        }
+
+        @media (max-width: $tablet-width) {
+            max-height: 760px;
+        }
     }
 }
 
 .form__heading {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-
     padding-top: 228px;
+    width: max-content;
+
+    @media (max-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding-top: 65px;
+        width: 100%;
+    }
 
     h2 {
         margin: 0;
@@ -34,6 +68,18 @@
         font-weight: 700;
         font-size: 40px;
         line-height: 60px;
+
+        @media (max-width: $tablet-width) {
+            font-size: 34px;
+            line-height: 51px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: $mobile-width) {
+            font-size: 24px;
+            line-height: 31px;
+            max-width: 195px;
+        }
     }
 
     p {
@@ -41,19 +87,41 @@
         max-width: 352px;
         font-size: 18px;
         line-height: 27px;
+
+        @media (max-width: $tablet-width) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: $mobile-width) {
+            margin-bottom: 40px;
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 257px;
+        }
     }
 }
 
 .form__content {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    padding: 50px;
+    padding: 50px 0;
+
+    @media (max-width: $tablet-width) {
+        padding: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding: 0 15px;
+    }
 
     form {
         height: 455px;
         max-width: 403px;
         background-color: $tangaroa;
         padding: 50px;
+
+        @media (max-width: $mobile-width) {
+            padding: 40px 30px;
+            min-height: 460px;
+        }
     }
 }
 
@@ -65,6 +133,11 @@
         font-size: 18px;
         line-height: 27px;
         color: $alice-blue;
+
+        @media (max-width: $mobile-width) {
+           line-height: 25px;
+           text-align: center;
+        }
     }
 }
 
@@ -83,10 +156,17 @@
         width: 100%;
         padding: 11px 16px;
         color: $tangaroa;
+        background-color: $alice-blue;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: 1px -2px 6px $alice-blue;
+        }
     }
 
     &::placeholder {
-        color: rgba($tangaroa, 0.7)
+        color: rgba($tangaroa, 0.7);
     }
 
     &--username {
@@ -110,6 +190,15 @@
         label {
             display: flex;
             align-items: center;
+
+            &:hover,
+            &:focus {
+                opacity: 0.8;
+            }
+
+            &:active {
+                opacity: 1;
+            }
         }
 
         input {
@@ -119,6 +208,13 @@
             height: 18px;
             background-color: $alice-blue;
             margin-right: 5px;
+            flex-shrink: 0;
+
+            @media (max-width: $mobile-width) {
+                margin-right: 8px;
+                width: 20px;
+                height: 20px;
+            }
 
             &::after {
                 position: absolute;
@@ -144,5 +240,16 @@
     &--button {
         font-weight: 600;
         padding: 9px 0;
+
+        &:focus,
+        &:hover {
+            color: $prussian-blue;
+            background-color: $quartz;
+            opacity: 0.7;
+        }
+
+        &:active {
+            opacity: 1;
+        }
     }
 }

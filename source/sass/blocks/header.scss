@@ -8,8 +8,20 @@
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 45px;
+
+    @media (max-width: $mobile-width) {
+        padding: 0 15px;
+    }
 }
 
 .header__nav {
     padding-top: 35px;
+
+    @media (max-width: $tablet-width) {
+        padding-top: 30px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding-top: 20px;
+    }
 }

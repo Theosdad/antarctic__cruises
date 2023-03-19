@@ -9,5 +9,33 @@
 
 .social__link {
     color: $alice-blue;
+
+    &:focus,
+    &:hover {
+        color: $quartz;
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 1;
+    }
 }
 
+.social__icon {
+    @media (max-width: $tablet-width) {
+        &--ok {
+            width: 10px;
+            height: 16px;
+        }
+
+        &--dzen {
+            width: 16px;
+            height: 16px;
+        }
+
+        &--reddit {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

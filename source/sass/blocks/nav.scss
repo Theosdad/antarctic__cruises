@@ -9,8 +9,38 @@
     margin: 0;
     padding: 0;
     padding-bottom: 12px;
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .nav__button {
     display: none;
+
+    @media (max-width: $mobile-width) {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &::after,    
+        &::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 24px;
+            background-color: $alice-blue;
+            top: 12px;
+            left: 20%;
+        }
+
+        &::after {
+            top: 16px;
+            box-shadow: 0 4px 0 0 $alice-blue;
+        }
+    }
 }

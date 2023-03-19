@@ -1,0 +1,22 @@
+.logo__image {
+    user-select: none;
+
+    @media (max-width: $tablet-width) {
+        width: 32px;
+        height: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 42px;
+        height: 22px;
+    }
+
+    &:focus,
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 1;   
+    }
+}

@@ -30,18 +30,18 @@
               </picture>
             </div>
           </a>
-          <ul class="nav__menu site-list">
+          <ul class="nav__menu site-list site-list--nav">
             <li class="site-list__item">
-              <a class="site-list__link" href="#advantages">Преимущества</a>
+              <a class="site-list__link site-list__link--nav" href="#advantages">Преимущества</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Направления</a>
+              <a class="site-list__link site-list__link--nav" href="#">Направления</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Ближайщие круизы</a>
+              <a class="site-list__link site-list__link--nav" href="#catalog">Ближайшие круизы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Контакты</a>
+              <a class="site-list__link site-list__link--nav" href="#contacts">Контакты</a>
             </li>
           </ul>
           <button class="nav__button"></button>
@@ -120,7 +120,8 @@
             <h2>Преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
-                <svg aria-hidden="true" focusable="false" width="27" height="32">
+                <svg class="advantages__icon advantages__icon--liner" aria-hidden="true" focusable="false" width="27"
+                  height="32">
                   <use href="./img/sprite.svg#icon-liner" />
                 </svg>
                 <h3>Небольшой круизный лайнер</h3>
@@ -128,7 +129,8 @@
                   и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
               </li>
               <li class="advantages__item">
-                <svg aria-hidden="true" focusable="false" width="38" height="32">
+                <svg class="advantages__icon advantages__icon--all-inclusive" aria-hidden="true" focusable="false"
+                  width="38" height="32">
                   <use href="./img/sprite.svg#icon-all-inclusive" />
                 </svg>
                 <h3>Система все включено</h3>
@@ -136,7 +138,8 @@
                   и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
               </li>
               <li class="advantages__item">
-                <svg aria-hidden="true" focusable="false" width="44" height="32">
+                <svg class="advantages__icon advantages__icon--boat" aria-hidden="true" focusable="false" width="44"
+                  height="32">
                   <use href="./img/sprite.svg#icon-boat" />
                 </svg>
                 <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
@@ -149,22 +152,22 @@
       </section>
       <section class="catalog" id="catalog">
         <div class="catalog__container">
-          <h2>Ближайщие круизы</h2>
+          <h2>Ближайшие круизы</h2>
           <div class="catalog__content">
             <ul class="catalog__list">
               <li class="catalog__item">
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-1-mobile.webp 1x, ./img/catalog/catalog-image-1-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-1.webp 1x, ./img/catalog/catalog-image-mobile-1@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-1-tablet.webp 1x, ./img/catalog/catalog-image-1-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-1.webp 1x, ./img/catalog/catalog-image-tablet-1@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-1.webp 1x, ./img/catalog/catalog-image-1@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-1-mobile.jpg 1x, ./img/catalog/catalog-image-1-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-1.jpg 1x, ./img/catalog/catalog-image-mobile-1@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-1-tablet.jpg 1x, ./img/catalog/catalog-image-1-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-1.jpg 1x, ./img/catalog/catalog-image-tablet-1@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-1.jpg" srcset="./img/catalog/catalog-image-1@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Астория”.">
                   </picture>
@@ -181,7 +184,9 @@
                     <dt>Цена</dt>
                     <dd>от 11500 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
 
@@ -189,15 +194,15 @@
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-8-mobile.webp 1x, ./img/catalog/catalog-image-8-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-8.webp 1x, ./img/catalog/catalog-image-mobile-8@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-8-tablet.webp 1x, ./img/catalog/catalog-image-8-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-8.webp 1x, ./img/catalog/catalog-image-tablet-8@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-8.webp 1x, ./img/catalog/catalog-image-8@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-8-mobile.jpg 1x, ./img/catalog/catalog-image-8-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-8.jpg 1x, ./img/catalog/catalog-image-mobile-8@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-8-tablet.jpg 1x, ./img/catalog/catalog-image-8-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-8.jpg 1x, ./img/catalog/catalog-image-tablet-8@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-8.jpg" srcset="./img/catalog/catalog-image-8@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Элайн”.">
                   </picture>
@@ -214,7 +219,9 @@
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
 
@@ -222,15 +229,15 @@
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-3-mobile.webp 1x, ./img/catalog/catalog-image-3-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-3.webp 1x, ./img/catalog/catalog-image-mobile-3@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-3-tablet.webp 1x, ./img/catalog/catalog-image-3-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-3.webp 1x, ./img/catalog/catalog-image-tablet-3@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-3.webp 1x, ./img/catalog/catalog-image-3@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-3-mobile.jpg 1x, ./img/catalog/catalog-image-3-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-3.jpg 1x, ./img/catalog/catalog-image-mobile-3@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-3-tablet.jpg 1x, ./img/catalog/catalog-image-3-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-3.jpg 1x, ./img/catalog/catalog-image-tablet-3@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-3.jpg" srcset="./img/catalog/catalog-image-3@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Атлантис”.">
                   </picture>
@@ -248,7 +255,9 @@
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
 
@@ -256,15 +265,15 @@
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-4-mobile.webp 1x, ./img/catalog/catalog-image-4-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-4.webp 1x, ./img/catalog/catalog-image-mobile-4@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-4-tablet.webp 1x, ./img/catalog/catalog-image-4-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-4.webp 1x, ./img/catalog/catalog-image-tablet-4@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-4.webp 1x, ./img/catalog/catalog-image-4@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-4-mobile.jpg 1x, ./img/catalog/catalog-image-4-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-4.jpg 1x, ./img/catalog/catalog-image-mobile-4@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-4-tablet.jpg 1x, ./img/catalog/catalog-image-4-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-4.jpg 1x, ./img/catalog/catalog-image-tablet-4@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-4.jpg" srcset="./img/catalog/catalog-image-4@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Одиссей”.">
                   </picture>
@@ -281,7 +290,9 @@
                     <dt>Цена</dt>
                     <dd>от 9700 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
 
@@ -289,15 +300,15 @@
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-5-mobile.webp 1x, ./img/catalog/catalog-image-5-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-5.webp 1x, ./img/catalog/catalog-image-mobile-5@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-5-tablet.webp 1x, ./img/catalog/catalog-image-5-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-5.webp 1x, ./img/catalog/catalog-image-tablet-5@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-5.webp 1x, ./img/catalog/catalog-image-5@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-5-mobile.jpg 1x, ./img/catalog/catalog-image-5-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-5.jpg 1x, ./img/catalog/catalog-image-mobile-5@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-5-tablet.jpg 1x, ./img/catalog/catalog-image-5-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-5.jpg 1x, ./img/catalog/catalog-image-tablet-5@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-5.jpg" srcset="./img/catalog/catalog-image-5@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Олимпия”.">
                   </picture>
@@ -315,7 +326,9 @@
                     <dt>Цена</dt>
                     <dd>от 18600 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
 
@@ -323,15 +336,15 @@
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-6-mobile.webp 1x, ./img/catalog/catalog-image-6-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-6.webp 1x, ./img/catalog/catalog-image-mobile-6@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-6-tablet.webp 1x, ./img/catalog/catalog-image-6-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-6.webp 1x, ./img/catalog/catalog-image-tablet-6@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-6.webp 1x, ./img/catalog/catalog-image-6@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-6-mobile.jpg 1x, ./img/catalog/catalog-image-6-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-6.jpg 1x, ./img/catalog/catalog-image-mobile-6@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-6-tablet.jpg 1x, ./img/catalog/catalog-image-6-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-6.jpg 1x, ./img/catalog/catalog-image-tablet-6@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-6.jpg" srcset="./img/catalog/catalog-image-6@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Аврора”.">
                   </picture>
@@ -348,7 +361,9 @@
                     <dt>Цена</dt>
                     <dd>от 11700 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
 
@@ -356,15 +371,15 @@
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-7-mobile.webp 1x, ./img/catalog/catalog-image-7-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-7.webp 1x, ./img/catalog/catalog-image-mobile-7@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-7-tablet.webp 1x, ./img/catalog/catalog-image-7-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-7.webp 1x, ./img/catalog/catalog-image-tablet-7@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-7.webp 1x, ./img/catalog/catalog-image-7@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-7-mobile.jpg 1x, ./img/catalog/catalog-image-7-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-7.jpg 1x, ./img/catalog/catalog-image-mobile-7@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-7-tablet.jpg 1x, ./img/catalog/catalog-image-7-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-7.jpg 1x, ./img/catalog/catalog-image-tablet-7@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-7.jpg" srcset="./img/catalog/catalog-image-7@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Леонор”.">
                   </picture>
@@ -381,7 +396,9 @@
                     <dt>Цена</dt>
                     <dd>от 12500 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
 
@@ -389,15 +406,15 @@
                 <div class="catalog__image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-8-mobile.webp 1x, ./img/catalog/catalog-image-8-mobile@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-mobile-8.webp 1x, ./img/catalog/catalog-image-mobile-8@2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-8-tablet.webp 1x, ./img/catalog/catalog-image-8-tablet@2x.webp 2x">
+                      srcset="./img/catalog/catalog-image-tablet-8.webp 1x, ./img/catalog/catalog-image-tablet-8@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/catalog/catalog-image-8.webp 1x, ./img/catalog/catalog-image-8@2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-8-mobile.jpg 1x, ./img/catalog/catalog-image-8-mobile@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-mobile-8.jpg 1x, ./img/catalog/catalog-image-mobile-8@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-8-tablet.jpg 1x, ./img/catalog/catalog-image-8-tablet@2x.jpg 2x">
+                      srcset="./img/catalog/catalog-image-tablet-8.jpg 1x, ./img/catalog/catalog-image-tablet-8@2x.jpg 2x">
                     <img src="./img/catalog/catalog-image-8.jpg" srcset="./img/catalog/catalog-image-8@2x.jpg 2x"
                       width="260" height="386" alt="Круиз “Минион - 1”.">
                   </picture>
@@ -414,7 +431,9 @@
                     <dt>Цена</dt>
                     <dd>от 12300 $</dd>
                   </dl>
-                  <a class="catalog__button" href="#">Забронировать</a>
+                  <div class="catalog__button-wrapper">
+                    <a class="catalog__button" href="#">Забронировать</a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -438,48 +457,50 @@
                 height="555" alt="Живописный вид антарктических ледников.">
             </picture>
           </div>
-          <div class="form__heading">
-            <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур за&nbsp;3-6 месяцев
-              до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
-          </div>
-          <div class="form__content">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="form__heading-wrapper">
-                <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
-              </div>
-              <div class="form__input-wrapper">
-                <div class="form__input form__input--username">
-                  <label for="username" data-validate-type="text" data-required
-                    data-message-base="Поле обязательно к заполнению">
-                    <input type="text" name="username" id="username" placeholder="Имя" required>
-                  </label>
+          <div class="form__wrapper">
+            <div class="form__heading">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за&nbsp;3-6 месяцев
+                до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <div class="form__content">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="form__heading-wrapper">
+                  <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
                 </div>
-                <div class="form__input form__input--userphone">
-                  <label for="userphone" data-validate-type="phone" data-required
-                    data-message-base="Поле обязательно к заполнению">
-                    <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required>
-                  </label>
+                <div class="form__input-wrapper">
+                  <div class="form__input form__input--username">
+                    <label for="username" data-validate-type="text" data-required
+                      data-message-base="Поле обязательно к заполнению">
+                      <input type="text" name="username" id="username" placeholder="Имя" required>
+                    </label>
+                  </div>
+                  <div class="form__input form__input--userphone">
+                    <label for="userphone" data-validate-type="phone" data-required
+                      data-message-base="Поле обязательно к заполнению">
+                      <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required>
+                    </label>
+                  </div>
+                  <div class="form__input form__input--usermail">
+                    <label for="usermail" data-validate-type="email" data-required
+                      data-message-base="Поле обязательно к заполнению">
+                      <input type="email" name="usermail" id="usermail" placeholder="Email" required>
+                    </label>
+                  </div>
+                  <div class="form__input form__input--agreement">
+                    <label for="agreement" data-validate-type="checkbox" data-required>
+                      <input type="checkbox" name="agreement" id="agreement" required checked>
+                      <span>Я согласен нa обработку персональных данных</span>
+                    </label>
+                  </div>
+                  <button class="form__input form__input--button" type="submit">Оставить заявку</button>
                 </div>
-                <div class="form__input form__input--usermail">
-                  <label for="usermail" data-validate-type="email" data-required
-                    data-message-base="Поле обязательно к заполнению">
-                    <input type="email" name="usermail" id="usermail" placeholder="Email" required>
-                  </label>
-                </div>
-                <div class="form__input form__input--agreement">
-                  <label for="agreement" data-validate-type="checkbox" data-required>
-                    <input type="checkbox" name="agreement" id="agreement" required checked>
-                    <span>Я согласен нa обработку персональных данных</span>
-                  </label>
-                </div>
-                <button class="form__input form__input--button" type="submit">Оставить заявку</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Нас очень легко найти. И невозможно забыть</h2>
         <div class="contacts__container">
           <div class="contacts__map">
@@ -504,7 +525,7 @@
               <svg aria-hidden="true" focusable="false" width="18" height="22">
                 <use href="./img/sprite.svg#icon-map-pin" />
               </svg>
-              <p>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+              <p>г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
             </a>
             <a class="contacts__link" href="tel:88002000000">
               <svg aria-hidden="true" focusable="false" width="18" height="18">
@@ -528,38 +549,38 @@
           </picture>
         </div>
       </a>
-      <ul class="footer__menu site-list">
+      <ul class="footer__menu site-list site-list--footer">
         <li class="site-list__item">
-          <a class="site-list__link" href="#">Преимущества</a>
+          <a class="site-list__link site-list__link--footer" href="#advantages">Преимущества</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">Направления</a>
+          <a class="site-list__link site-list__link--footer" href="#">Направления</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">Ближайщие круизы</a>
+          <a class="site-list__link site-list__link--footer" href="#catalog">Ближайщие круизы</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">Контакты</a>
+          <a class="site-list__link site-list__link--footer" href="#contacts">Контакты</a>
         </li>
       </ul>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg class="social__icon" aria-hidden="true" focusable="false" width="12" height="20">
+            <svg class="social__icon social__icon--ok" aria-hidden="true" focusable="false" width="12" height="20">
               <use href="./img/sprite.svg#icon-ok" />
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+            <svg class="social__icon social__icon--dzen" aria-hidden="true" focusable="false" width="20" height="20">
               <use href="./img/sprite.svg#icon-dzen" />
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+            <svg class="social__icon social__icon--reddit" aria-hidden="true" focusable="false" width="20" height="20">
               <use href="./img/sprite.svg#icon-reddit" />
             </svg>
           </a>
