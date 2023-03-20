@@ -44,7 +44,9 @@
               <a class="site-list__link site-list__link--nav" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <button class="nav__button"></button>
+          <button class="nav__button">
+            <span class="visually-hidden">Открыть / закрыть меню</span>
+          </button>
         </nav>
       </div>
     </header>
@@ -133,8 +135,8 @@
                   width="38" height="32">
                   <use href="./img/sprite.svg#icon-all-inclusive" />
                 </svg>
-                <h3>Система все включено</h3>
-                <p>Все наши круизы работают по системе &laquo;Все Включено&raquo;. Великолепные блюда
+                <h3>Система все&nbsp;включено</h3>
+                <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда
                   и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
               </li>
               <li class="advantages__item">
@@ -143,8 +145,8 @@
                   <use href="./img/sprite.svg#icon-boat" />
                 </svg>
                 <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
-                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на оборудованных лодках типа Zodiac
-                  c опытными экскурсоводами.</p>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                  c&nbsp;опытными экскурсоводами.</p>
               </li>
             </ul>
           </div>
@@ -153,291 +155,273 @@
       <section class="catalog" id="catalog">
         <div class="catalog__container">
           <h2>Ближайшие круизы</h2>
-          <div class="catalog__content">
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-1.webp 1x, ./img/catalog/catalog-image-mobile-1@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-1.webp 1x, ./img/catalog/catalog-image-tablet-1@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-1.webp 1x, ./img/catalog/catalog-image-1@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-1.jpg 1x, ./img/catalog/catalog-image-mobile-1@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-1.jpg 1x, ./img/catalog/catalog-image-tablet-1@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-1.jpg" srcset="./img/catalog/catalog-image-1@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Астория”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Астория”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>11 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 11500 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-1.webp 1x, ./img/catalog/catalog-image-mobile-1@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-1.webp 1x, ./img/catalog/catalog-image-tablet-1@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-1.webp 1x, ./img/catalog/catalog-image-1@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-1.jpg 1x, ./img/catalog/catalog-image-mobile-1@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-1.jpg 1x, ./img/catalog/catalog-image-tablet-1@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-1.jpg" srcset="./img/catalog/catalog-image-1@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Астория”.">
+                </picture>
+              </div>
+              <h3>Круиз “Астория”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>11 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 11500 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
 
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-8.webp 1x, ./img/catalog/catalog-image-mobile-8@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-8.webp 1x, ./img/catalog/catalog-image-tablet-8@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-8.webp 1x, ./img/catalog/catalog-image-8@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-8.jpg 1x, ./img/catalog/catalog-image-mobile-8@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-8.jpg 1x, ./img/catalog/catalog-image-tablet-8@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-8.jpg" srcset="./img/catalog/catalog-image-8@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Элайн”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Элайн”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Буэнос-Айрес</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>20 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 14500 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-8.webp 1x, ./img/catalog/catalog-image-mobile-8@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-8.webp 1x, ./img/catalog/catalog-image-tablet-8@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-8.webp 1x, ./img/catalog/catalog-image-8@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-8.jpg 1x, ./img/catalog/catalog-image-mobile-8@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-8.jpg 1x, ./img/catalog/catalog-image-tablet-8@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-8.jpg" srcset="./img/catalog/catalog-image-8@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Элайн”.">
+                </picture>
+              </div>
+              <h3>Круиз “Элайн”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Буэнос-Айрес</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>20 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 14500 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
 
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-3.webp 1x, ./img/catalog/catalog-image-mobile-3@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-3.webp 1x, ./img/catalog/catalog-image-tablet-3@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-3.webp 1x, ./img/catalog/catalog-image-3@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-3.jpg 1x, ./img/catalog/catalog-image-mobile-3@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-3.jpg 1x, ./img/catalog/catalog-image-tablet-3@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-3.jpg" srcset="./img/catalog/catalog-image-3@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Атлантис”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Атлантис”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы Острова&nbsp;&mdash; Антарктида
-                    </dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>15 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 14500 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-3.webp 1x, ./img/catalog/catalog-image-mobile-3@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-3.webp 1x, ./img/catalog/catalog-image-tablet-3@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-3.webp 1x, ./img/catalog/catalog-image-3@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-3.jpg 1x, ./img/catalog/catalog-image-mobile-3@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-3.jpg 1x, ./img/catalog/catalog-image-tablet-3@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-3.jpg" srcset="./img/catalog/catalog-image-3@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Атлантис”.">
+                </picture>
+              </div>
+              <h3>Круиз “Атлантис”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы Острова&nbsp;&mdash; Антарктида
+                  </dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>15 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 14500 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
 
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-4.webp 1x, ./img/catalog/catalog-image-mobile-4@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-4.webp 1x, ./img/catalog/catalog-image-tablet-4@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-4.webp 1x, ./img/catalog/catalog-image-4@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-4.jpg 1x, ./img/catalog/catalog-image-mobile-4@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-4.jpg 1x, ./img/catalog/catalog-image-tablet-4@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-4.jpg" srcset="./img/catalog/catalog-image-4@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Одиссей”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Одиссей”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Чили - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Пунта-Аренас</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>13 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 9700 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-4.webp 1x, ./img/catalog/catalog-image-mobile-4@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-4.webp 1x, ./img/catalog/catalog-image-tablet-4@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-4.webp 1x, ./img/catalog/catalog-image-4@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-4.jpg 1x, ./img/catalog/catalog-image-mobile-4@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-4.jpg 1x, ./img/catalog/catalog-image-tablet-4@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-4.jpg" srcset="./img/catalog/catalog-image-4@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Одиссей”.">
+                </picture>
+              </div>
+              <h3>Круиз “Одиссей”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Чили - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Пунта-Аренас</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>13 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 9700 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
 
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-5.webp 1x, ./img/catalog/catalog-image-mobile-5@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-5.webp 1x, ./img/catalog/catalog-image-tablet-5@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-5.webp 1x, ./img/catalog/catalog-image-5@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-5.jpg 1x, ./img/catalog/catalog-image-mobile-5@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-5.jpg 1x, ./img/catalog/catalog-image-tablet-5@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-5.jpg" srcset="./img/catalog/catalog-image-5@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Олимпия”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Олимпия”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида
-                    </dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>21 день</dd>
-                    <dt>Цена</dt>
-                    <dd>от 18600 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-5.webp 1x, ./img/catalog/catalog-image-mobile-5@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-5.webp 1x, ./img/catalog/catalog-image-tablet-5@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-5.webp 1x, ./img/catalog/catalog-image-5@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-5.jpg 1x, ./img/catalog/catalog-image-mobile-5@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-5.jpg 1x, ./img/catalog/catalog-image-tablet-5@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-5.jpg" srcset="./img/catalog/catalog-image-5@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Олимпия”.">
+                </picture>
+              </div>
+              <h3>Круиз “Олимпия”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида
+                  </dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>21 день</dd>
+                  <dt>Цена</dt>
+                  <dd>от 18600 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
 
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-6.webp 1x, ./img/catalog/catalog-image-mobile-6@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-6.webp 1x, ./img/catalog/catalog-image-tablet-6@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-6.webp 1x, ./img/catalog/catalog-image-6@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-6.jpg 1x, ./img/catalog/catalog-image-mobile-6@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-6.jpg 1x, ./img/catalog/catalog-image-tablet-6@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-6.jpg" srcset="./img/catalog/catalog-image-6@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Аврора”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Аврора”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Антарктида - Чили</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>14 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 11700 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-6.webp 1x, ./img/catalog/catalog-image-mobile-6@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-6.webp 1x, ./img/catalog/catalog-image-tablet-6@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-6.webp 1x, ./img/catalog/catalog-image-6@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-6.jpg 1x, ./img/catalog/catalog-image-mobile-6@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-6.jpg 1x, ./img/catalog/catalog-image-tablet-6@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-6.jpg" srcset="./img/catalog/catalog-image-6@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Аврора”.">
+                </picture>
+              </div>
+              <h3>Круиз “Аврора”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Антарктида - Чили</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>14 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 11700 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
 
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-7.webp 1x, ./img/catalog/catalog-image-mobile-7@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-7.webp 1x, ./img/catalog/catalog-image-tablet-7@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-7.webp 1x, ./img/catalog/catalog-image-7@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-7.jpg 1x, ./img/catalog/catalog-image-mobile-7@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-7.jpg 1x, ./img/catalog/catalog-image-tablet-7@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-7.jpg" srcset="./img/catalog/catalog-image-7@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Леонор”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Леонор”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида&nbsp;&mdash; Аргентина</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Пунта-Аренас</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>17 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 12500 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-7.webp 1x, ./img/catalog/catalog-image-mobile-7@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-7.webp 1x, ./img/catalog/catalog-image-tablet-7@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-7.webp 1x, ./img/catalog/catalog-image-7@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-7.jpg 1x, ./img/catalog/catalog-image-mobile-7@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-7.jpg 1x, ./img/catalog/catalog-image-tablet-7@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-7.jpg" srcset="./img/catalog/catalog-image-7@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Леонор”.">
+                </picture>
+              </div>
+              <h3>Круиз “Леонор”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида&nbsp;&mdash; Аргентина</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Пунта-Аренас</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>17 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 12500 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
 
-              <li class="catalog__item">
-                <div class="catalog__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-8.webp 1x, ./img/catalog/catalog-image-mobile-8@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-8.webp 1x, ./img/catalog/catalog-image-tablet-8@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/catalog/catalog-image-8.webp 1x, ./img/catalog/catalog-image-8@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/catalog/catalog-image-mobile-8.jpg 1x, ./img/catalog/catalog-image-mobile-8@2x.jpg 2x">
-                    <source media="(max-width: 1023px)"
-                      srcset="./img/catalog/catalog-image-tablet-8.jpg 1x, ./img/catalog/catalog-image-tablet-8@2x.jpg 2x">
-                    <img src="./img/catalog/catalog-image-8.jpg" srcset="./img/catalog/catalog-image-8@2x.jpg 2x"
-                      width="260" height="386" alt="Круиз “Минион - 1”.">
-                  </picture>
-                </div>
-                <h3>Круиз “Минион - 1”</h3>
-                <div class="catalog__description">
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>11 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 12300 $</dd>
-                  </dl>
-                  <div class="catalog__button-wrapper">
-                    <a class="catalog__button" href="#">Забронировать</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <li class="catalog__item">
+              <div class="catalog__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-8.webp 1x, ./img/catalog/catalog-image-mobile-8@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-8.webp 1x, ./img/catalog/catalog-image-tablet-8@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-image-8.webp 1x, ./img/catalog/catalog-image-8@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/catalog/catalog-image-mobile-8.jpg 1x, ./img/catalog/catalog-image-mobile-8@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="./img/catalog/catalog-image-tablet-8.jpg 1x, ./img/catalog/catalog-image-tablet-8@2x.jpg 2x">
+                  <img src="./img/catalog/catalog-image-8.jpg" srcset="./img/catalog/catalog-image-8@2x.jpg 2x"
+                    width="260" height="386" alt="Круиз “Минион - 1”.">
+                </picture>
+              </div>
+              <h3>Круиз “Минион - 1”</h3>
+              <div class="catalog__description">
+                <dl>
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>11 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 12300 $</dd>
+                </dl>
+              </div>
+              <a class="catalog__button" href="#">Забронировать</a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="form">
@@ -490,7 +474,7 @@
                   <div class="form__input form__input--agreement">
                     <label for="agreement" data-validate-type="checkbox" data-required>
                       <input type="checkbox" name="agreement" id="agreement" required checked>
-                      <span>Я согласен нa обработку персональных данных</span>
+                      <span>Я согласен нa обработку моих персональных данных</span>
                     </label>
                   </div>
                   <button class="form__input form__input--button" type="submit">Оставить заявку</button>
@@ -522,13 +506,13 @@
             <h2>У&nbsp;вас ещё остались вопросы или сомнения?
               Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h2>
             <a class="contacts__link" href="#">
-              <svg aria-hidden="true" focusable="false" width="18" height="22">
+              <svg class="contacts__icon contacts__icon--map-pin" aria-hidden="true" focusable="false" width="18" height="22">
                 <use href="./img/sprite.svg#icon-map-pin" />
               </svg>
               <p>г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
             </a>
             <a class="contacts__link" href="tel:88002000000">
-              <svg aria-hidden="true" focusable="false" width="18" height="18">
+              <svg class="contacts__icon contacts__icon--phone" aria-hidden="true" focusable="false" width="18" height="18">
                 <use href="./img/sprite.svg#icon-phone" />
               </svg>
               <p>8-800-200-00-00</p>
@@ -569,6 +553,7 @@
             <svg class="social__icon social__icon--ok" aria-hidden="true" focusable="false" width="12" height="20">
               <use href="./img/sprite.svg#icon-ok" />
             </svg>
+            <span class="visually-hidden">Мы в Одноклассниках</span>
           </a>
         </li>
         <li class="social__item">
@@ -576,6 +561,7 @@
             <svg class="social__icon social__icon--dzen" aria-hidden="true" focusable="false" width="20" height="20">
               <use href="./img/sprite.svg#icon-dzen" />
             </svg>
+            <span class="visually-hidden">Мы в Дзене</span>
           </a>
         </li>
         <li class="social__item">
@@ -583,6 +569,7 @@
             <svg class="social__icon social__icon--reddit" aria-hidden="true" focusable="false" width="20" height="20">
               <use href="./img/sprite.svg#icon-reddit" />
             </svg>
+            <span class="visually-hidden">Мы на Reddit</span>
           </a>
         </li>
       </ul>
