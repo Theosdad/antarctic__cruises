@@ -6,14 +6,8 @@
     row-gap: 12px;
 
     @media (max-width: $tablet-width) {
-        gap: 23px;
+        gap: 24px;
     }
-
-    // &--nav {
-    //     @media (max-width: $tablet-width) {
-    //         gap: 23px;
-    //     }
-    // }
 }
 
 .site-list__link {

@@ -5,6 +5,10 @@
     grid-template-columns: repeat(3, max-content);
     gap: 27px;
     row-gap: 12px;
+
+    @media (max-width: $tablet-width) {
+        column-gap: 22px;
+    }
 }
 
 .social__link {
