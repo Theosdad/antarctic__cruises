@@ -1,5 +1,6 @@
 .form {
     width: 100%;
+    background-color: $curious-blue;
 }
 
 .form__container {
@@ -148,8 +149,8 @@
         color: $alice-blue;
 
         @media (max-width: $mobile-width) {
-           line-height: 25px;
-           text-align: center;
+            line-height: 25px;
+            text-align: center;
         }
     }
 }
@@ -164,6 +165,7 @@
     font-size: 14px;
     line-height: 21px;
     color: $tangaroa;
+
 
     & input:not([type="checkbox"]) {
         width: 100%;

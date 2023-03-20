@@ -8,6 +8,10 @@
   <meta name="description" content="Круизы в Антарктику. Туристическое агенство для самых горячих">
   <meta name="keywords" content="Круизы, туры, экскурсии, Антарктика, Антарктида">
   <title>Круизы в Антарктику</title>
+  <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="./img/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
@@ -447,27 +451,24 @@
               <p>Забронируйте тур за&nbsp;3-6&nbsp;месяцев
                 до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
-            <div class="form__content">
+            <div class="form__content" data-form-validate>
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__heading-wrapper">
                   <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
                 </div>
                 <div class="form__input-wrapper">
                   <div class="form__input form__input--username">
-                    <label for="username" data-validate-type="text" data-required
-                      data-message-base="Поле обязательно к заполнению">
+                    <label for="username" data-validate-type="text" data-required>
                       <input type="text" name="username" id="username" placeholder="Имя" required>
                     </label>
                   </div>
                   <div class="form__input form__input--userphone">
-                    <label for="userphone" data-validate-type="phone" data-required
-                      data-message-base="Поле обязательно к заполнению">
+                    <label for="userphone" data-validate-type="phone" data-required>
                       <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required>
                     </label>
                   </div>
                   <div class="form__input form__input--usermail">
-                    <label for="usermail" data-validate-type="email" data-required
-                      data-message-base="Поле обязательно к заполнению">
+                    <label for="usermail" data-validate-type="email" data-required>
                       <input type="email" name="usermail" id="usermail" placeholder="Email" required>
                     </label>
                   </div>
@@ -487,32 +488,36 @@
       <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Нас очень легко найти. И невозможно забыть</h2>
         <div class="contacts__container">
-          <div class="contacts__map">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="./img/map/map-underlay-mobile.webp 1x, ./img/map/map-underlay-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="./img/map/map-underlay-tablet.webp 1x, ./img/map/map-underlay-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/map/map-underlay.webp 1x, ./img/map/map-underlay@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="./img/map/map-underlay-mobile.jpg 1x, ./img/map/map-underlay-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)"
-                srcset="./img/map/map-underlay-tablet.jpg 1x, ./img/map/map-underlay-tablet@2x.jpg 2x">
-              <img src="./img/map/map-underlay.jpg" srcset="./img/map/map-underlay@2x.jpg 2x" width="560" height="306"
-                alt="Адрес нашего офиса - г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
-            </picture>
+          <div class="contacts__map" id="map-canvas">
+            <div class="contacts__map-image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/map/map-underlay-mobile.webp 1x, ./img/map/map-underlay-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/map/map-underlay-tablet.webp 1x, ./img/map/map-underlay-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/map/map-underlay.webp 1x, ./img/map/map-underlay@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./img/map/map-underlay-mobile.jpg 1x, ./img/map/map-underlay-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="./img/map/map-underlay-tablet.jpg 1x, ./img/map/map-underlay-tablet@2x.jpg 2x">
+                <img src="./img/map/map-underlay.jpg" srcset="./img/map/map-underlay@2x.jpg 2x" width="560" height="306"
+                  alt="Адрес нашего офиса - г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
+              </picture>
+            </div>
           </div>
           <div class="contacts__description">
             <h2>У&nbsp;вас ещё остались вопросы или сомнения?
               Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h2>
             <a class="contacts__link" href="#">
-              <svg class="contacts__icon contacts__icon--map-pin" aria-hidden="true" focusable="false" width="18" height="22">
+              <svg class="contacts__icon contacts__icon--map-pin" aria-hidden="true" focusable="false" width="18"
+                height="22">
                 <use href="./img/sprite.svg#icon-map-pin" />
               </svg>
               <p>г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
             </a>
             <a class="contacts__link" href="tel:88002000000">
-              <svg class="contacts__icon contacts__icon--phone" aria-hidden="true" focusable="false" width="18" height="18">
+              <svg class="contacts__icon contacts__icon--phone" aria-hidden="true" focusable="false" width="18"
+                height="18">
                 <use href="./img/sprite.svg#icon-phone" />
               </svg>
               <p>8-800-200-00-00</p>

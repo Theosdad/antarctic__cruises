@@ -20,22 +20,19 @@
 
 .contacts__map {
     flex-shrink: 0;
+    position: relative;
+    width: 560px;
+    height: 306px;
+
+    @media (max-width: $tablet-width) {
+        width: 324px;
+        height: 335px;
+    }
 
     @media (max-width: $mobile-width) {
         padding-top: 16px;
-    }
-
-    img {
-        @media (max-width: $tablet-width) {
-            width: 324px;
-            height: 335px;
-        }
-
-        @media (max-width: $mobile-width) {
-            max-width: 290px;
-            max-height: 316px;
-
-        }
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -108,6 +105,22 @@
     &--map-pin {
         @media (max-width: $tablet-width) {
             transform: translateY(-8px);
+        }
+    }
+}
+
+.contacts__map-image {
+    position: absolute;
+
+    img {
+        @media (max-width: $tablet-width) {
+            width: 324px;
+            height: 335px;
+        }
+
+        @media (max-width: $mobile-width) {
+            width: 290px;
+            height: 316px;
         }
     }
 }

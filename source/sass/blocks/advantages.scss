@@ -1,5 +1,6 @@
 .advantages {
     width: 100%;
+    background-color: $pattens-blue;
 }
 
 .advantages__container {
@@ -9,7 +10,6 @@
 
 .advantages__image {
     position: absolute;
-    z-index: -1;
     width: 100%;
 
     img {
@@ -32,6 +32,8 @@
     max-width: 1250px;
     margin: 0 auto;
     margin-bottom: 120px;
+    position: relative;
+    z-index: 2;
 
     h2 {
         width: max-content;
