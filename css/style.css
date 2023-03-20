@@ -894,6 +894,7 @@ button,
 
 .hero {
   width: 100%;
+  background-color: #145492;
 }
 
 .hero__container {
@@ -987,6 +988,7 @@ button,
 
 .advantages {
   width: 100%;
+  background-color: #dce8f4;
 }
 
 .advantages__container {
@@ -996,7 +998,6 @@ button,
 
 .advantages__image {
   position: absolute;
-  z-index: -1;
   width: 100%;
 }
 
@@ -1013,6 +1014,8 @@ button,
   max-width: 1250px;
   margin: 0 auto;
   margin-bottom: 120px;
+  position: relative;
+  z-index: 2;
 }
 
 .advantages__content h2 {
@@ -1267,6 +1270,7 @@ button,
 
 .form {
   width: 100%;
+  background-color: #388bb7;
 }
 
 .form__container {
@@ -1504,6 +1508,9 @@ button,
 .contacts__map {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  position: relative;
+  width: 560px;
+  height: 306px;
 }
 
 .contacts__description {
@@ -1548,6 +1555,10 @@ button,
 
 .contacts__link:active {
   opacity: 1;
+}
+
+.contacts__map-image {
+  position: absolute;
 }
 
 .logo__image {
@@ -1866,7 +1877,7 @@ button,
     gap: 4%;
   }
 
-  .contacts__map img {
+  .contacts__map {
     width: 324px;
     height: 335px;
   }
@@ -1888,6 +1899,11 @@ button,
     -webkit-transform: translateY(-8px);
     -ms-transform: translateY(-8px);
     transform: translateY(-8px);
+  }
+
+  .contacts__map-image img {
+    width: 324px;
+    height: 335px;
   }
 
   .logo__image {
@@ -2175,11 +2191,8 @@ button,
 
   .contacts__map {
     padding-top: 16px;
-  }
-
-  .contacts__map img {
-    max-width: 290px;
-    max-height: 316px;
+    width: 100%;
+    height: auto;
   }
 
   .contacts__description {
@@ -2191,6 +2204,11 @@ button,
 
   .contacts__link {
     margin-bottom: 20px;
+  }
+
+  .contacts__map-image img {
+    width: 290px;
+    height: 316px;
   }
 
   .logo__image {
