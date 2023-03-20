@@ -1,45 +1,108 @@
 .nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  order: -1;
 }
 
 .nav__menu {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    @media (max-width: $mobile-width) {
-        display: none;
-    }
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .nav__button {
-    display: none;
+  display: none;
 
-    @media (max-width: $mobile-width) {
-        display: block;
-        position: relative;
-        width: 40px;
-        height: 40px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 
-        &::after,    
-        &::before {
-            content: '';
-            position: absolute;
-            height: 2px;
-            width: 24px;
-            background-color: $alice-blue;
-            top: 13px;
-            left: 20%;
-        }
-
-        &::after {
-            top: 19px;
-            box-shadow: 0 6px 0 0 $alice-blue;
-        }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 24px;
+      background-color: $alice-blue;
+      top: 13px;
+      left: 20%;
     }
+
+    &::after {
+      top: 19px;
+      box-shadow: 0 6px 0 0 $alice-blue;
+    }
+  }
+}
+
+.nav__menu.shown {
+  display: flex;
+  pointer-events: none;
+
+  li {
+    pointer-events: all;
+  }
+
+  &::before {
+    content: "";
+    width: 42px;
+    height: 22px;
+    background: url("../../img/svg/logo-burger.svg");
+    transform: translate(-10px, -16px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 35px;
+    height: 100vh;
+    background-color: rgba($prussian-blue, 0.5);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.nav__menu.shown + .nav__button {
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  pointer-events: none;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 18px;
+    background-color: $tangaroa;
+    top: 45%;
+    left: 25%;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+}
+
+.nav__menu.shown ~ .nav__logo {
+  display: none;
 }

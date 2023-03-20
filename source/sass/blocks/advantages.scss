@@ -1,189 +1,188 @@
 .advantages {
-    width: 100%;
-    background-color: $pattens-blue;
+  width: 100%;
+  background-color: $pattens-blue;
 }
 
 .advantages__container {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .advantages__image {
-    position: absolute;
+  position: absolute;
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    object-position: 50% 100%;
     width: 100%;
+    height: 562px;
 
-    img {
-        object-fit: cover;
-        object-position: 50% 100%;
-        width: 100%;
-        height: 562px;
-
-        @media (max-width: $tablet-width) {
-            height: 588px;
-        }
-
-        @media (max-width: $mobile-width) {
-            height: 997px;
-        }
+    @media (max-width: $tablet-width) {
+      height: 588px;
     }
+
+    @media (max-width: $mobile-width) {
+      height: 997px;
+    }
+  }
 }
 
 .advantages__content {
-    max-width: 1250px;
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  position: relative;
+  z-index: 2;
+
+  h2 {
+    width: max-content;
     margin: 0 auto;
-    margin-bottom: 120px;
-    position: relative;
-    z-index: 2;
+    margin-bottom: 49px;
+    padding-top: 110px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
 
-    h2 {
-        width: max-content;
-        margin: 0 auto;
-        margin-bottom: 49px;
-        padding-top: 110px;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 42px;
-
-        @media (max-width: $tablet-width) {
-            padding-top: 89px;
-            margin-bottom: 50px;
-            font-size: 26px;
-            line-height: 39px;
-        }
-
-        @media (max-width: $mobile-width) {
-            padding-top: 56px;
-            font-size: 24px;
-            line-height: 36px;
-            margin-bottom: 31px;
-        }
+    @media (max-width: $tablet-width) {
+      padding-top: 89px;
+      margin-bottom: 50px;
+      font-size: 26px;
+      line-height: 39px;
     }
+
+    @media (max-width: $mobile-width) {
+      padding-top: 56px;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 31px;
+    }
+  }
 }
 
 .advantages__list {
-    padding: 0 45px;
-    margin: 0;
-    list-style-type: none;
+  padding: 0 45px;
+  margin: 0;
+  list-style-type: none;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 
-    @media (max-width: $tablet-width) {
-        gap: 30px;
-    }
+  @media (max-width: $tablet-width) {
+    gap: 30px;
+  }
 
-    @media (max-width: $mobile-width) {
-        grid-template-columns: 1fr;
-        padding: 0 15px;
-    }
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
 }
 
 .advantages__item {
-    max-width: 360px;
-    min-height: 241px;
-    padding: 30px;
-    background-color: $alice-blue;
+  max-width: 360px;
+  min-height: 241px;
+  padding: 30px;
+  background-color: $alice-blue;
+
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    padding: 26px 16px 20px 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    max-width: none;
+    padding: 25px 20px;
+    padding-bottom: 20px;
+    min-height: 250px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 9px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 
     @media (max-width: $tablet-width) {
-        width: 206px;
-        padding: 26px 16px 20px 20px;
+      line-height: 25px;
     }
 
     @media (max-width: $mobile-width) {
-        width: 100%;
-        max-width: none;
-        padding: 25px 20px;
-        padding-bottom: 20px;
-        min-height: 250px;
+      max-width: 200px;
     }
+  }
 
-    h3 {
-        margin: 0;
-        margin-bottom: 9px;
+  p {
+    margin: 0;
 
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 285px;
 
-        @media (max-width: $tablet-width) {
-            line-height: 25px;
-        }
-
-        @media (max-width: $mobile-width) {
-            max-width: 200px;
-        }
+    @media (max-width: $mobile-width) {
+      max-width: none;
     }
+  }
 
+  &:first-child {
     p {
-        margin: 0;
+      max-width: 288px;
 
-        font-size: 14px;
-        line-height: 20px;
-        max-width: 285px;
+      @media (max-width: $mobile-width) {
+        max-width: none;
+      }
+    }
+  }
+
+  &:nth-child(3n) {
+    @media (max-width: $tablet-width) {
+      p {
+        transform: translateY(10px);
+        max-width: 167px;
 
         @media (max-width: $mobile-width) {
-            max-width: none;
+          max-width: none;
+          transform: none;
         }
+      }
     }
+  }
 
-    &:first-child {
-        p {
-            max-width: 288px;
+  &:hover,
+  &:focus {
+    background-color: $tangaroa;
 
-            @media (max-width: $mobile-width) {
-                max-width: none;
-            }
-        }
+    svg,
+    h3,
+    p {
+      color: $alice-blue;
     }
-
-    &:nth-child(3n) {
-
-        @media (max-width: $tablet-width) {
-            p {
-                transform: translateY(10px);
-                max-width: 167px;
-
-                @media (max-width: $mobile-width) {
-                    max-width: none;
-                    transform: none;
-                }
-            }
-        }
-    }
-
-    &:hover,
-    &:focus {
-        background-color: $tangaroa;
-
-        svg,
-        h3,
-        p {
-            color: $alice-blue
-        }
-    }
+  }
 }
 
 .advantages__icon {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    @media (max-width: $tablet-width) {
-        height: 26px;
+  @media (max-width: $tablet-width) {
+    height: 26px;
 
-        &--liner {
-            width: 21px;
-        }
-
-        &--all-inclusive {
-            width: 27px;
-        }
-
-        &--boat {
-            width: 36px;
-        }
+    &--liner {
+      width: 21px;
     }
 
-    @media (max-width: $mobile-width) {
-        margin-bottom: 13px;
+    &--all-inclusive {
+      width: 27px;
     }
+
+    &--boat {
+      width: 36px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 13px;
+  }
 }

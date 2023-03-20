@@ -1,7 +1,8 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-import { initMap } from './modules/init-map';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
+import {initMap} from './modules/init-map';
+import {executeBurgerMenu} from './modules/burger-menu';
 
 // ---------------------------------
 
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    executeBurgerMenu();
 
     const map = document.getElementById('map-canvas');
     const observer = new IntersectionObserver((entries) => {
@@ -56,7 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
     observer.observe(map);
   });
 });
-
 
 
 // ---------------------------------
