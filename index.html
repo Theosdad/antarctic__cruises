@@ -25,6 +25,24 @@
     <header class="header">
       <div class="header__container">
         <nav class="header__nav nav">
+          <ul class="nav__menu site-list site-list--nav" data-burger-menu>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--nav" href="#advantages" data-burger-menu-close>Преимущества</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--nav" href="#" data-burger-menu-close>Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--nav" href="#catalog" data-burger-menu-close>Ближайшие
+                круизы</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--nav" href="#contacts" data-burger-menu-close]>Контакты</a>
+            </li>
+          </ul>
+          <button class="nav__button" data-burger-menu-close>
+            <span class="visually-hidden">Открыть / закрыть меню</span>
+          </button>
           <a class="nav__logo logo" href="#">
             <div class="logo__image">
               <picture>
@@ -34,23 +52,6 @@
               </picture>
             </div>
           </a>
-          <ul class="nav__menu site-list site-list--nav">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--nav" href="#advantages">Преимущества</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--nav" href="#">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--nav" href="#catalog">Ближайшие круизы</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--nav" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-          <button class="nav__button">
-            <span class="visually-hidden">Открыть / закрыть меню</span>
-          </button>
         </nav>
       </div>
     </header>
@@ -160,7 +161,7 @@
         <div class="catalog__container">
           <h2>Ближайшие круизы</h2>
           <ul class="catalog__list">
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -193,7 +194,7 @@
               <a class="catalog__button" href="#">Забронировать</a>
             </li>
 
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -226,7 +227,7 @@
               <a class="catalog__button" href="#">Забронировать</a>
             </li>
 
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -260,7 +261,7 @@
               <a class="catalog__button" href="#">Забронировать</a>
             </li>
 
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -293,7 +294,7 @@
               <a class="catalog__button" href="#">Забронировать</a>
             </li>
 
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -327,7 +328,7 @@
               <a class="catalog__button" href="#">Забронировать</a>
             </li>
 
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -360,7 +361,7 @@
               <a class="catalog__button" href="#">Забронировать</a>
             </li>
 
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -393,7 +394,7 @@
               <a class="catalog__button" href="#">Забронировать</a>
             </li>
 
-            <li class="catalog__item">
+            <li class="catalog__item" tabindex="0">
               <div class="catalog__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -508,13 +509,13 @@
           <div class="contacts__description">
             <h2>У&nbsp;вас ещё остались вопросы или сомнения?
               Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h2>
-            <a class="contacts__link" href="#">
+            <address class="contacts__link">
               <svg class="contacts__icon contacts__icon--map-pin" aria-hidden="true" focusable="false" width="18"
                 height="22">
                 <use href="./img/sprite.svg#icon-map-pin" />
               </svg>
               <p>г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
-            </a>
+            </address>
             <a class="contacts__link" href="tel:88002000000">
               <svg class="contacts__icon contacts__icon--phone" aria-hidden="true" focusable="false" width="18"
                 height="18">
@@ -546,7 +547,7 @@
           <a class="site-list__link site-list__link--footer" href="#">Направления</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--footer" href="#catalog">Ближайщие круизы</a>
+          <a class="site-list__link site-list__link--footer" href="#catalog">Ближайшие круизы</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link site-list__link--footer" href="#contacts">Контакты</a>
