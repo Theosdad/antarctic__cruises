@@ -33,13 +33,13 @@
             height: 2px;
             width: 24px;
             background-color: $alice-blue;
-            top: 12px;
+            top: 13px;
             left: 20%;
         }
 
         &::after {
-            top: 16px;
-            box-shadow: 0 4px 0 0 $alice-blue;
+            top: 19px;
+            box-shadow: 0 6px 0 0 $alice-blue;
         }
     }
 }

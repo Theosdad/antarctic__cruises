@@ -7,6 +7,8 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto 1fr auto;
+
+
 }
 
 .form__wrapper {
@@ -20,6 +22,10 @@
 
     @media (max-width: $tablet-width) {
         grid-template-columns: 1fr;
+    }
+
+    @media (max-width: $tablet-width) {
+        padding: 0;
     }
 }
 
@@ -59,7 +65,7 @@
     }
 
     @media (max-width: $mobile-width) {
-        padding-top: 65px;
+        padding-top: 59px;
         width: 100%;
     }
 
@@ -81,6 +87,7 @@
             font-size: 24px;
             line-height: 31px;
             max-width: 195px;
+            margin-bottom: 14px;
         }
     }
 
@@ -95,7 +102,7 @@
         }
 
         @media (max-width: $mobile-width) {
-            margin-bottom: 40px;
+            margin-bottom: -31px;
             font-size: 16px;
             line-height: 22px;
             max-width: 257px;
@@ -115,6 +122,7 @@
 
     @media (max-width: $mobile-width) {
         padding: 0 15px;
+        transform: none;
     }
 
     form {
@@ -124,7 +132,7 @@
         padding: 44px 50px;
 
         @media (max-width: $mobile-width) {
-            padding: 40px 30px;
+            padding: 36px 30px;
             min-height: 460px;
         }
     }
@@ -184,6 +192,10 @@
 
     &--usermail {
         margin-bottom: 20px;
+
+        @media (max-width: $mobile-width) {
+            margin-bottom: 17px;
+        }
     }
 
     &--agreement {
@@ -191,6 +203,10 @@
         line-height: 13px;
         color: $alice-blue;
         margin-bottom: 30px;
+
+        @media (max-width: $mobile-width) {
+            margin-bottom: 27px;
+        }
 
         label {
             display: flex;

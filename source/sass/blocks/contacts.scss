@@ -13,12 +13,17 @@
 
     @media (max-width: $mobile-width) {
         flex-direction: column;
-        padding: 65px 15px;
+        padding: 58px 15px;
+        padding-bottom: 65px;
     }
 }
 
 .contacts__map {
     flex-shrink: 0;
+
+    @media (max-width: $mobile-width) {
+        padding-top: 16px;
+    }
 
     img {
         @media (max-width: $tablet-width) {
@@ -45,6 +50,7 @@
 
     @media (max-width: $mobile-width) {
         order: -1;
+        padding: 0;
     }
 
     h2 {
@@ -71,7 +77,7 @@
     color: $tangaroa;
 
     @media (max-width: $mobile-width) {
-        margin-bottom: 33px;
+        margin-bottom: 20px;
     }
 
     svg {

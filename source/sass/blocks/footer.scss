@@ -32,7 +32,7 @@
 
     @media (max-width: $mobile-width) {
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 22px;
     } 
 }
 
@@ -45,7 +45,7 @@
         display: flex;
         flex-direction: column;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 21px;
     }   
 }
 
@@ -56,5 +56,9 @@
 
     @media (max-width: $tablet-width) {
         transform: translate(-3px, 2px);
+    }
+
+    @media (max-width: $mobile-width) {
+        transform: none;
     }
 }
