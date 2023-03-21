@@ -821,7 +821,7 @@ button,
   content: "";
   width: 42px;
   height: 22px;
-  background: url("../../img/svg/logo-burger.svg");
+  background: url("../img/svg/logo-burger.svg");
   -webkit-transform: translate(-10px, -16px);
   -ms-transform: translate(-10px, -16px);
   transform: translate(-10px, -16px);
