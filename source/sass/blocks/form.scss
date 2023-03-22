@@ -237,6 +237,7 @@
       background-color: $alice-blue;
       margin-right: 5px;
       flex-shrink: 0;
+      cursor: pointer;
 
       @media (max-width: $mobile-width) {
         margin-right: 8px;
