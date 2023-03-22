@@ -167,10 +167,11 @@
 
   & input:not([type="checkbox"]) {
     width: 100%;
-    padding: 12.5px 16px;
+    padding: 11px 16px;
     color: $tangaroa;
     background-color: $alice-blue;
     border: none;
+    line-height: 21px;
 
     &:hover,
     &:focus {
