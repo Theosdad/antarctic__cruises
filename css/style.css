@@ -1096,12 +1096,14 @@ button,
   color: #f9fbfd;
   margin: 0;
   margin-bottom: 2px;
+  padding-right: 0.1px;
 }
 
 .catalog__description dd {
   color: #d8d8d9;
   margin: 0;
   margin-bottom: 10px;
+  padding-right: 0.1px;
 }
 
 .catalog__item {
@@ -1429,6 +1431,7 @@ button,
   margin-right: 5px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .form__input--agreement input::after {
