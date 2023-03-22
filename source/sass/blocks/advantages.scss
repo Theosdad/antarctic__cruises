@@ -5,35 +5,37 @@
 
 .advantages__container {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .advantages__image {
   position: absolute;
   width: 100%;
+  height: 100%;
 
   img {
     object-fit: cover;
     object-position: 50% 100%;
     width: 100%;
-    height: 562px;
-
-    @media (max-width: $tablet-width) {
-      height: 588px;
-    }
-
-    @media (max-width: $mobile-width) {
-      height: 997px;
-    }
+    height: 100%;
   }
 }
 
 .advantages__content {
   max-width: 1250px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   position: relative;
   z-index: 2;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 101px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 64px;
+  }
 
   h2 {
     width: max-content;
