@@ -768,6 +768,10 @@ button,
   row-gap: 12px;
 }
 
+.site-list__item {
+  max-width: 170px;
+}
+
 .site-list__link {
   font-weight: 500;
   font-size: 16px;
@@ -1630,6 +1634,10 @@ button,
 
   .site-list {
     gap: 24px;
+  }
+
+  .site-list__item {
+    max-width: 130px;
   }
 
   .site-list__link--nav {
