@@ -21,6 +21,11 @@
       right: 0;
       padding: 36px 26px 15px;
       gap: 26px;
+
+      .site-list__item {
+        max-width: none;
+        width: 100%;
+      }
     }
   }
 

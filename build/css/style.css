@@ -693,10 +693,15 @@ button,
   display: -ms-flexbox;
   display: flex;
   pointer-events: none;
+  max-height: 100vh;
+  overflow-y: scroll;
+  gap: 0;
+  padding-top: 62px;
 }
 
 .nav__menu.shown li {
   pointer-events: all;
+  padding-bottom: 26px;
 }
 
 .nav__menu.shown::before {
@@ -704,21 +709,11 @@ button,
   width: 42px;
   height: 22px;
   background: url("../img/svg/logo-burger.svg");
-  -webkit-transform: translate(-10px, -16px);
-  -ms-transform: translate(-10px, -16px);
-  transform: translate(-10px, -16px);
-}
-
-.nav__menu.shown::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -35px;
-  width: 35px;
-  height: 100vh;
-  background-color: rgba(0, 43, 102, 0.5);
-  z-index: -1;
-  pointer-events: none;
+  -webkit-transform: translate(-10px, -42px);
+  -ms-transform: translate(-10px, -42px);
+  transform: translate(-10px, -42px);
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .nav__menu.shown + .nav__button {
@@ -754,6 +749,21 @@ button,
 
 .nav__menu.shown ~ .nav__logo {
   display: none;
+}
+
+.nav__overlay {
+  display: none;
+}
+
+.nav__menu.shown ~ .nav__overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 43, 102, 0.5);
 }
 
 .site-list {
@@ -1977,6 +1987,11 @@ button,
     right: 0;
     padding: 36px 26px 15px;
     gap: 26px;
+  }
+
+  .site-list--nav .site-list__item {
+    max-width: none;
+    width: 100%;
   }
 
   .site-list--footer {

@@ -1,5 +1,6 @@
 const burgerMenu = document.querySelector('[data-burger-menu]');
 const burgerMenuClosers = document.querySelectorAll('[data-burger-menu-close]');
+let viewportWidth = window.innerWidth;
 
 function toggleMenu() {
   burgerMenu.classList.toggle('shown');
@@ -23,6 +24,16 @@ function onMenuToggle() {
   document.body.addEventListener('click', onOutsideClick, true);
   toggleMenu();
 }
+
+window.addEventListener('resize', () => {
+  viewportWidth = window.innerWidth;
+  if (viewportWidth >= 768) {
+    if (burgerMenu.classList.contains('shown')) {
+      burgerMenu.classList.remove('shown');
+      document.body.classList.remove('scroll-lock');
+    }
+  }
+});
 
 function executeBurgerMenu() {
   burgerMenuClosers.forEach((closer) => closer.addEventListener('click', onMenuToggle));

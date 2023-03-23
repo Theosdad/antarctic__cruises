@@ -51,9 +51,14 @@
 .nav__menu.shown {
   display: flex;
   pointer-events: none;
+  max-height: 100vh;
+  overflow-y: scroll;
+  gap: 0;
+  padding-top: 62px;
 
   li {
     pointer-events: all;
+    padding-bottom: 26px;
   }
 
   &::before {
@@ -61,21 +66,11 @@
     width: 42px;
     height: 22px;
     background: url("../img/svg/logo-burger.svg");
-    transform: translate(-10px, -16px);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -35px;
-    width: 35px;
-    height: 100vh;
-    background-color: rgba($prussian-blue, 0.5);
-    z-index: -1;
-    pointer-events: none;
+    transform: translate(-10px, -42px);
+    flex-shrink: 0;
   }
 }
+
 
 .nav__menu.shown + .nav__button {
   z-index: 100;
@@ -105,4 +100,19 @@
 
 .nav__menu.shown ~ .nav__logo {
   display: none;
+}
+
+.nav__overlay {
+  display: none;
+}
+
+.nav__menu.shown ~ .nav__overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba($prussian-blue, 0.5);
 }
