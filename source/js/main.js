@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {observer, map} from './modules/map';
-import {initBurgerMenu} from './modules/burger-menu';
+import './modules/burger-menu';
 
 // ---------------------------------
 
@@ -21,7 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    initBurgerMenu();
     observer.observe(map);
   });
 });
