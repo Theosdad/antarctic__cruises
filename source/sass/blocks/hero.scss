@@ -9,7 +9,7 @@
   height: max-content;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto 1024px auto;
+  grid-template-columns: auto 1000px auto;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: auto 100% auto;
@@ -41,7 +41,7 @@
   position: relative;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  padding: 270px 27px 277px;
+  padding: 270px 15px 277px;
   color: $alice-blue;
 
   @media (max-width: $tablet-width) {

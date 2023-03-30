@@ -50,14 +50,12 @@
 
 .nav__menu.shown {
   display: flex;
-  pointer-events: none;
   max-height: 100vh;
   overflow-y: scroll;
   gap: 0;
   padding-top: 62px;
 
   li {
-    pointer-events: all;
     padding-bottom: 26px;
   }
 
@@ -77,7 +75,6 @@
   position: absolute;
   right: 0;
   top: 12px;
-  pointer-events: none;
   cursor: pointer;
 
   &::after,

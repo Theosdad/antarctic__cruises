@@ -1,29 +1,28 @@
 const burgerMenu = document.querySelector('[data-burger-menu]');
-const burgerMenuClosers = document.querySelectorAll('[data-burger-menu-close]');
+const burgerButton = document.querySelector('[data-burger-button]');
+const burgerMenuClosers = document.querySelectorAll('[data-burger-close]');
 let viewportWidth = window.innerWidth;
 
-function toggleMenu() {
-  burgerMenu.classList.toggle('shown');
-  document.body.classList.toggle('scroll-lock');
+function openMenu() {
+  burgerMenu.classList.add('shown');
+  document.body.classList.add('scroll-lock');
 }
 
-function onOutsideClick(event) {
-  if (event.target.closest('[data-burger-menu]')) {
-    return;
-  }
-  document.body.removeEventListener('click', onOutsideClick, true);
-  toggleMenu();
+function closeMenu() {
+  burgerMenu.classList.remove('shown');
+  document.body.classList.remove('scroll-lock');
 }
 
-function onMenuToggle() {
+function initBurgerMenu() {
   if (burgerMenu.classList.contains('shown')) {
-    document.body.removeEventListener('click', onOutsideClick, true);
-    toggleMenu();
-    return;
+    closeMenu();
+  } else {
+    openMenu();
   }
-  document.body.addEventListener('click', onOutsideClick, true);
-  toggleMenu();
 }
+
+burgerButton.addEventListener('click', initBurgerMenu);
+burgerMenuClosers.forEach((closer) => closer.addEventListener('click', closeMenu));
 
 window.addEventListener('resize', () => {
   viewportWidth = window.innerWidth;
@@ -35,8 +34,4 @@ window.addEventListener('resize', () => {
   }
 });
 
-function executeBurgerMenu() {
-  burgerMenuClosers.forEach((closer) => closer.addEventListener('click', onMenuToggle));
-}
-
-export {executeBurgerMenu};
+export {initBurgerMenu};

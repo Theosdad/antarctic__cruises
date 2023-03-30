@@ -103,6 +103,8 @@
 
 .contacts__icon {
   &--map-pin {
+    flex-shrink: 0;
+
     @media (max-width: $tablet-width) {
       transform: translateY(-8px);
     }
