@@ -7,6 +7,7 @@ const createMap = ({id, initials, placemark}) => {
 };
 
 function initMap(mapData) {
+  document.querySelector('.contacts__map-image').style.display = 'none';
   if (apiLoaded) {
     createMap(mapData);
 
